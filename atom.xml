@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>李海涛</title>
+  
+  
+  <link href="https://lihtdev.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://lihtdev.github.io/"/>
+  <updated>2024-10-05T10:09:20.251Z</updated>
+  <id>https://lihtdev.github.io/</id>
+  
+  <author>
+    <name>李海涛</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>留在南京</title>
+    <link href="https://lihtdev.github.io/2019/08/18/stay-in-nanjing/"/>
+    <id>https://lihtdev.github.io/2019/08/18/stay-in-nanjing/</id>
+    <published>2019-08-18T09:07:03.000Z</published>
+    <updated>2024-10-05T10:09:20.251Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;今天忽然发现我的刷牙杯子居然用了八年之久了，是我刚去南昌上学的时候买的，跟着我，从南昌到北京，吕梁，最后来到了南京……这个杯子虽然见证了我这八年的生活历程，但用了这么久了，也该换一换了，不能太寒酸了，此时不换，更待何时！&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/.io//my-</summary>
+      
+    
+    
+    
+    
+    <category term="个人日记" scheme="https://lihtdev.github.io/tags/personal-diary/"/>
+    
+    <category term="南京" scheme="https://lihtdev.github.io/tags/%E5%8D%97%E4%BA%AC/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>家乡的小学被拆掉了</title>
+    <link href="https://lihtdev.github.io/2019/05/07/primary-school-in-my-hometown/"/>
+    <id>https://lihtdev.github.io/2019/05/07/primary-school-in-my-hometown/</id>
+    <published>2019-05-07T12:00:00.000Z</published>
+    <updated>2024-10-05T10:09:20.236Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;最近几天，听家里人说，村里搞拆迁，学校院子里的那九孔窑洞被拆掉了。村里的小学搁置了好几年了，院子里虽说很久没人住了，现在突然拆掉了，自己还是有点不舍。&lt;/p&gt;
+&lt;p&gt;我的童年是在这里度过的，回想起自己曾经在这所学校的那段时光，感触良多。&lt;/p&gt;
+&lt;p&gt;这所小小的学校办了好多</summary>
+      
+    
+    
+    
+    
+    <category term="个人日记" scheme="https://lihtdev.github.io/tags/personal-diary/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>我家的那只猫</title>
+    <link href="https://lihtdev.github.io/2019/01/26/my-cat-in-my-hometown/"/>
+    <id>https://lihtdev.github.io/2019/01/26/my-cat-in-my-hometown/</id>
+    <published>2019-01-26T11:44:16.000Z</published>
+    <updated>2024-10-05T10:09:20.221Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;快过年了，马上就要回家了，我想起了我家的那只猫。&lt;/p&gt;
+&lt;p&gt;2018年年初的时候，我从北京辞职回到在山西农村的家里，开始复习备战我谋划已久的考研计划，中途因为给眼睛做了个手术，花费太大，缺钱而不得不放弃考研，9月份的时候我离开家来到了南京。&lt;/p&gt;
+&lt;p&gt;考研复习这段时</summary>
+      
+    
+    
+    
+    
+    <category term="个人日记" scheme="https://lihtdev.github.io/tags/personal-diary/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>jQuery 插件开发</title>
+    <link href="https://lihtdev.github.io/2017/09/26/jquery-plugin-development/"/>
+    <id>https://lihtdev.github.io/2017/09/26/jquery-plugin-development/</id>
+    <published>2017-09-25T16:27:34.000Z</published>
+    <updated>2024-10-05T10:09:20.221Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;本文转载自互联网&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;jQuery 插件的开发包括两种：一种是类级别的插件开发，即给 jQuery 添加新的全局函数，相当于给 jQuery 类本身添加方法。jQuery 的全局函数就是属于 jQuery 命名</summary>
+      
+    
+    
+    
+    
+    <category term="开发者手册" scheme="https://lihtdev.github.io/tags/developer-manual/"/>
+    
+    <category term="jQuery" scheme="https://lihtdev.github.io/tags/jQuery/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>使用 Hexo 搭建个人博客</title>
+    <link href="https://lihtdev.github.io/2017/09/19/blogging-with-hexo/"/>
+    <id>https://lihtdev.github.io/2017/09/19/blogging-with-hexo/</id>
+    <published>2017-09-19T10:48:03.000Z</published>
+    <updated>2024-10-05T11:19:32.538Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;一直想开个博客写几篇技术文章，因为写博客不仅能让自己更深入地理解某项技术，而且可以总结归纳一些我学到的知识点分享给别人，但总是犹豫在什么地方写博客，因为现在有很多比如 CSDN、博客园、简书等博客平台，很难选择，也都不是我喜欢的类型。后来看到我关注的一些大牛都自行搭建了个人</summary>
+      
+    
+    
+    
+    
+    <category term="开发者手册" scheme="https://lihtdev.github.io/tags/developer-manual/"/>
+    
+    <category term="Hexo" scheme="https://lihtdev.github.io/tags/Hexo/"/>
+    
+    <category term="Github Pages" scheme="https://lihtdev.github.io/tags/Github-Pages/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://lihtdev.github.io/2017/09/08/hello-world/"/>
+    <id>https://lihtdev.github.io/2017/09/08/hello-world/</id>
+    <published>2017-09-08T10:00:00.000Z</published>
+    <updated>2024-10-05T10:09:20.221Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+</feed>

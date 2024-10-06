@@ -1,7 +1,7 @@
 https://lihtdev.github.io/2017/09/19/blogging-with-hexo/
 https://lihtdev.github.io/about/index.html
-https://lihtdev.github.io/tags/index.html
 https://lihtdev.github.io/search/index.html
+https://lihtdev.github.io/tags/index.html
 https://lihtdev.github.io/2019/08/18/stay-in-nanjing/
 https://lihtdev.github.io/2019/05/07/primary-school-in-my-hometown/
 https://lihtdev.github.io/2017/09/08/hello-world/
@@ -10,7 +10,7 @@ https://lihtdev.github.io/2017/09/26/jquery-plugin-development/
 https://lihtdev.github.io/
 https://lihtdev.github.io/tags/personal-diary/
 https://lihtdev.github.io/tags/developer-manual/
+https://lihtdev.github.io/tags/jQuery/
+https://lihtdev.github.io/tags/%E5%8D%97%E4%BA%AC/
 https://lihtdev.github.io/tags/Hexo/
 https://lihtdev.github.io/tags/Github-Pages/
-https://lihtdev.github.io/tags/%E5%8D%97%E4%BA%AC/
-https://lihtdev.github.io/tags/jQuery/

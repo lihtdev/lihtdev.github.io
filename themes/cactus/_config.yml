@@ -5,7 +5,7 @@
 # Link to a page that gives an overview of all your projects.
 # This can be an external link (e.g., to you GitHub profile) or to another
 # page within your website.
-projects_url: https://github.com/lihthub
+projects_url: https://github.com/lihtdev
 
 # Set the page direction to RTL or LTR. default is LTR. (if you set it 'rtl', the 'vazir' font will be loaded.)
 direction: ltr
@@ -17,7 +17,7 @@ nav:
   home: /
   about: /about/
   articles: /archives/
-  projects: https://github.com/lihthub
+  projects: https://github.com/lihtdev
   tags: /tags/
   search: /search/
 
@@ -27,11 +27,11 @@ nav:
 # (see https://fontawesome.com/icons?d=gallery&s=brands);
 # only 'mail' is an exception.
 social_links:
-  github: https://github.com/lihthub
+  github: https://github.com/lihtdev
   stack-overflow: https://stackoverflow.com/users/7560951/li-haitao
   weibo: http://weibo.com/lihaitao2013
   linkedin: http://www.linkedin.com/in/lihait
-  mail: mailto:lihaitao.dev@gmail.com?body=From https://lihaitao.github.io
+  mail: mailto:lihaitao.me@qq.com?body=From https://lihtdev.github.io
   rss: /atom.xml
 
 
@@ -118,15 +118,15 @@ open_graph:
 gitalk: 
   enabled: true
   # [String] GitHub Application Client ID.
-  client_id: eaef31085ad16558a923
+  client_id: Ov23liM8Hux7t0U9wOKp
   # [String] GitHub Application Client Secret.
-  client_secret: 9be5e1cab55cdbf595240c5d5ebf2fd81e96f539
+  client_secret: 2df2b2c635c78586a76c62f48d4b92fdc3f4ebb4
   # [String] GitHub repository.
-  repo: lihthub.github.io
+  repo: lihtdev.github.io
   # [String] GitHub repository 所有者，可以是个人或者组织
-  owner: lihthub
+  owner: lihtdev
   # [Array] GitHub repository 的所有者和合作者 (对这个 repository 有写权限的用户)
-  admin: lihthub
+  admin: lihtdev
 
 # Fill in your Google Analytics tracking ID to enable Google Analytics.
 google_analytics: 
@@ -141,4 +141,4 @@ baidu_analytics:
 # Fill in you Gravatar user id / email if you want to use your gravatar as the
 # logo and/or favicons of you website.
 gravatar:
-  email: lihaitao.dev@gmail.com
+  email: lihaitao.me@qq.com

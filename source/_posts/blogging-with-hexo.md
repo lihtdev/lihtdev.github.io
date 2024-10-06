@@ -4,7 +4,7 @@ author: 李海涛
 date: 2017-09-19 18:48:03
 tags: [ 开发者手册, Hexo, Github Pages ]
 ---
-一直想开个博客写几篇技术文章，因为写博客不仅能让自己更深入地理解某项技术，而且可以总结归纳一些我学到的知识点分享给别人，但总是犹豫在什么地方写博客，因为现在有很多比如 CSDN、博客园、简书等博客平台，很难选择，也都不是我喜欢的类型。后来看到我关注的一些大牛都自行搭建了个人博客，所以就选了这种形式。因为自建博客权限比较高，可控性也高，博客的样式、布局都可以由自己来设定，最重要的是搭建过程包括发文章都使用命令来操作，更像是一个极客的风格。于是我在网上查了些资料，折腾了大半天，终于使用 [Hexo](https://hexo.io) +  [Github Pages](https://pages.github.com) 搭起了自己的博客 [lihthub](https://lihthub.github.io)。相对于使用专业的已经成型的博客平台，自行搭建博客可能有点折腾，下面详细记录下我的搭建过程。
+一直想开个博客写几篇技术文章，因为写博客不仅能让自己更深入地理解某项技术，而且可以总结归纳一些我学到的知识点分享给别人，但总是犹豫在什么地方写博客，因为现在有很多比如 CSDN、博客园、简书等博客平台，很难选择，也都不是我喜欢的类型。后来看到我关注的一些大牛都自行搭建了个人博客，所以就选了这种形式。因为自建博客权限比较高，可控性也高，博客的样式、布局都可以由自己来设定，最重要的是搭建过程包括发文章都使用命令来操作，更像是一个极客的风格。于是我在网上查了些资料，折腾了大半天，终于使用 [Hexo](https://hexo.io) +  [Github Pages](https://pages.github.com) 搭起了自己的博客 [lihtdev](https://lihtdev.github.io)。相对于使用专业的已经成型的博客平台，自行搭建博客可能有点折腾，下面详细记录下我的搭建过程。
 
 ## 什么是 Hexo ?
 
@@ -36,15 +36,15 @@ $ npm install hexo-cli -g
 
 ## 创建 Hexo 项目
 
-安装好 Hexo 后，在本地新建个文件夹作为 Hexo 项目文件夹，名称随意，我的叫 `lihthub.github.io` ，执行下列命令，Hexo 会在指定文件夹 `lihthub.github.io` 中新建所需要的文件：
+安装好 Hexo 后，在本地新建个文件夹作为 Hexo 项目文件夹，名称随意，我的叫 `lihtdev.github.io` ，执行下列命令，Hexo 会在指定文件夹 `lihtdev.github.io` 中新建所需要的文件：
 
 ``` bash
-$ hexo init lihthub.github.io # 初始化 Hexo 项目
-$ cd lihthub.github.io
+$ hexo init lihtdev.github.io # 初始化 Hexo 项目
+$ cd lihtdev.github.io
 $ npm install
 ```
 
-初始化后，会在文件夹 `lihthub.github.io` 里生成以下目录结构，这就是你的 Workspace：
+初始化后，会在文件夹 `lihtdev.github.io` 里生成以下目录结构，这就是你的 Workspace：
 
 ``` bash
 .
@@ -96,15 +96,19 @@ disqus_shortname: your shortname # Disqus Comments Shortname
 
 ### 图片
 
-[hexo-asset-image](https://github.com/CodeFalling/hexo-asset-image) 能帮助你更好地管理博客中所用到的图片，每篇博文都会生成一个单独的资源文件夹，而不是混在一起。安装命令是：
 
-``` bash
-$ npm install hexo-asset-image --save
+在 `_config.yml` 里启用以下配置项：
+
+```
+post_asset_folder: true
+marked:
+  prependRoot: true
+  postAsset: true
 ```
 
-并且需要在 `_config.yml` 里设置 `post_asset_folder: true`。
+启用后，资源图片将会被自动解析为其对应文章的路径。 例如： image.jpg 位置为 `/2020/01/02/foo/image.jpg`，这表示它是 `/2020/01/02/foo/` 文章的一张资源图片， `![](image.jpg) `将会被解析为 `<img src="/2020/01/02/foo/image.jpg"> `。
 
-安装完成后用 Hexo 新建文章时会在文章同目录下 `source/_posts` 生成一个和文章同名的文件夹，文章相关的所有图片放这个文件夹里就行，例如：
+用 Hexo 新建文章时会在文章同目录下 `source/_posts` 生成一个和文章同名的文件夹，文章相关的所有图片放这个文件夹里就行，例如：
 
 ```
 MacGesture2-Publish
@@ -227,15 +231,15 @@ not provide shell access.
 
 ### Github Pages
 
-在 Github 上[新建](https://github.com/new)一个名为 `username`.github.io 的 repository ， username 是你的 Github 账号，比如我的叫 lihthub.github.io 。然后修改配置文件 `_config.yml` 里的以下内容：
+在 Github 上[新建](https://github.com/new)一个名为 `username`.github.io 的 repository ， username 是你的 Github 账号，比如我的叫 lihtdev.github.io 。然后修改配置文件 `_config.yml` 里的以下内容：
 
 ``` yaml
 # url 就是刚才新建的 repository 的名称
 # repo 是刚才新建的 repository 的 SSH url
-url: https://lihthub.github.io
+url: https://lihtdev.github.io
 deploy:
   type: git
-  repo: git@github.com:lihthub/lihthub.github.io.git
+  repo: git@github.com:lihtdev/lihtdev.github.io.git
   branch: master
 ```
 
@@ -253,7 +257,7 @@ $ hexo server # 启动本地服务
 $ hexo deploy
 ```
 
-到这里博客就完全搭建起来了，访问 https://lihthub.github.io 就可以看到博客了。
+到这里博客就完全搭建起来了，访问 https://lihtdev.github.io 就可以看到博客了。
 
 ## 写博客
 
@@ -301,7 +305,7 @@ $ hexo deploy --generate # 生成静态文件并发布到 Github
 ``` bash
 deploy:
   type: git
-  repo: git@github.com:lihthub/lihthub.github.io.git
+  repo: git@github.com:lihtdev/lihtdev.github.io.git
   branch: master
 ```
 
@@ -311,7 +315,7 @@ deploy:
 $ git init # 初始化 Git 项目
 $ git checkout -b develop # 新建并切换到 develop 分支
 # 添加远程仓库 origin ，后面是你在 Github 上创建的 repository 的 url
-$ git remote add origin git@github.com:lihthub/lihthub.github.io.git
+$ git remote add origin git@github.com:lihtdev/lihtdev.github.io.git
 $ git add . # 将当前目录的所有文件加入暂存区
 $ git commit -m "提交说明" # 提交更新
 $ git push origin develop # 推送到远程仓库 origin 的 develop 分支
@@ -319,19 +323,19 @@ $ git push origin develop # 推送到远程仓库 origin 的 develop 分支
 
 需要注意的是本地博客文件夹根目录下的 `.gitignore` 是 Hexo 自带的文件，也要提交到仓库，里面列的是要被 Git 忽略的文件，这些文件不需要纳入 Git 的管理。
 
-这样就把本地博客项目提交到你的 Github 中 `lihthub.github.io` 仓库的 `develop` 分支上了。然后将仓库的默认分支设置为 develop，因为 develop 分支需要手动管理。
+这样就把本地博客项目提交到你的 Github 中 `lihtdev.github.io` 仓库的 `develop` 分支上了。然后将仓库的默认分支设置为 develop，因为 develop 分支需要手动管理。
 
-在 Github 中打开 `lihthub.github.io` 仓库的主页面，点击上面的 2 branches:
+在 Github 中打开 `lihtdev.github.io` 仓库的主页面，点击上面的 2 branches:
 
-![lihthub.github.io](lihthub.github.io.png)
+![lihtdev.github.io](lihtdev-github-io.png)
 
 然后点击页面右上角的 Change default branch 按钮:
 
-![lihthub.github.io](change-default-branch.png)
+![lihtdev.github.io](change-default-branch.png)
 
 然后按下图所示依次点击将 Default branch 设为 `develop`:
 
-![lihthub.github.io](switch-default-branch.png)
+![lihtdev.github.io](switch-default-branch.png)
 
 每次更新完博客或者更改了源文件都要执行下列命令提交更新：
 
@@ -347,7 +351,7 @@ $ git push origin develop # 推送到远程仓库 origin 的 develop 分支
 首先需要在新电脑上将远程仓库克隆下来：
 
 ``` bash
-$ git clone git@github.com:lihthub/lihthub.github.io.git
+$ git clone git@github.com:lihtdev/lihtdev.github.io.git
 ```
 
 输入 `git branch` 确认一下当前分支是否为 develop 。然后安装 Node.js 和 Git 。接着执行以下命令安装 Hexo：
@@ -356,10 +360,10 @@ $ git clone git@github.com:lihthub/lihthub.github.io.git
 $ npm install hexo-cli -g
 ```
 
-装好 Hexo 后，进入 `lihthub.github.io` 目录，安装所需要的 Hexo 插件：
+装好 Hexo 后，进入 `lihtdev.github.io` 目录，安装所需要的 Hexo 插件：
 
 ``` bash
-$ cd lihthub.github.io
+$ cd lihtdev.github.io
 $ npm install
 $ npm install hexo-asset-image --save # 图片管理
 $ npm install hexo-generator-feed --save # RSS订阅

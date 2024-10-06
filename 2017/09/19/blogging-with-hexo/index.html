@@ -14,19 +14,19 @@
 <meta property="og:site_name" content="李海涛">
 <meta property="og:description" content="一直想开个博客写几篇技术文章，因为写博客不仅能让自己更深入地理解某项技术，而且可以总结归纳一些我学到的知识点分享给别人，但总是犹豫在什么地方写博客，因为现在有很多比如 CSDN、博客园、简书等博客平台，很难选择，也都不是我喜欢的类型。后来看到我关注的一些大牛都自行搭建了个人博客，所以就选了这种形式。因为自建博客权限比较高，可控性也高，博客的样式、布局都可以由自己来设定，最重要的是搭建过程包括发文章">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://lihtdev.github.io/.io//github-setting.png">
-<meta property="og:image" content="https://lihtdev.github.io/.io//new-ssh-key.png">
-<meta property="og:image" content="https://lihtdev.github.io/.io//lihtdev.github.io.png">
-<meta property="og:image" content="https://lihtdev.github.io/.io//change-default-branch.png">
-<meta property="og:image" content="https://lihtdev.github.io/.io//switch-default-branch.png">
+<meta property="og:image" content="https://lihtdev.github.io/2017/09/19/blogging-with-hexo/github-setting.png">
+<meta property="og:image" content="https://lihtdev.github.io/2017/09/19/blogging-with-hexo/new-ssh-key.png">
+<meta property="og:image" content="https://lihtdev.github.io/lihtdev.github.io.png">
+<meta property="og:image" content="https://lihtdev.github.io/2017/09/19/blogging-with-hexo/change-default-branch.png">
+<meta property="og:image" content="https://lihtdev.github.io/2017/09/19/blogging-with-hexo/switch-default-branch.png">
 <meta property="article:published_time" content="2017-09-19T10:48:03.000Z">
-<meta property="article:modified_time" content="2024-10-05T11:19:32.538Z">
+<meta property="article:modified_time" content="2024-10-06T06:09:14.916Z">
 <meta property="article:author" content="李海涛">
 <meta property="article:tag" content="开发者手册">
 <meta property="article:tag" content="Hexo">
 <meta property="article:tag" content="Github Pages">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://lihtdev.github.io/.io//github-setting.png">
+<meta name="twitter:image" content="https://lihtdev.github.io/2017/09/19/blogging-with-hexo/github-setting.png">
     
     
         
@@ -190,11 +190,11 @@
 <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">disqus_shortname:</span> <span class="string">your</span> <span class="string">shortname</span> <span class="comment"># Disqus Comments Shortname</span></span><br></pre></td></tr></table></figure>
 
 <p><strong>以上插件已不建议使用，推荐使用 <a href="https://gitalk.github.io/">Gitalk</a> 2021&#x2F;07&#x2F;25</strong></p>
-<h3 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h3><p><a href="https://github.com/CodeFalling/hexo-asset-image">hexo-asset-image</a> 能帮助你更好地管理博客中所用到的图片，每篇博文都会生成一个单独的资源文件夹，而不是混在一起。安装命令是：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-asset-image --save</span><br></pre></td></tr></table></figure>
+<h3 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h3><p>在 <code>_config.yml</code> 里启用以下配置项：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">post_asset_folder: true</span><br><span class="line">marked:</span><br><span class="line">  prependRoot: true</span><br><span class="line">  postAsset: true</span><br></pre></td></tr></table></figure>
 
-<p>并且需要在 <code>_config.yml</code> 里设置 <code>post_asset_folder: true</code>。</p>
-<p>安装完成后用 Hexo 新建文章时会在文章同目录下 <code>source/_posts</code> 生成一个和文章同名的文件夹，文章相关的所有图片放这个文件夹里就行，例如：</p>
+<p>启用后，资源图片将会被自动解析为其对应文章的路径。 例如： image.jpg 位置为 <code>/2020/01/02/foo/image.jpg</code>，这表示它是 <code>/2020/01/02/foo/</code> 文章的一张资源图片， <code>![](image.jpg) </code>将会被解析为 <code>&lt;img src=&quot;/2020/01/02/foo/image.jpg&quot;&gt; </code>。</p>
+<p>用 Hexo 新建文章时会在文章同目录下 <code>source/_posts</code> 生成一个和文章同名的文件夹，文章相关的所有图片放这个文件夹里就行，例如：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">MacGesture2-Publish</span><br><span class="line">├── apppicker.jpg</span><br><span class="line">├── logo.jpg</span><br><span class="line">└── rules.jpg</span><br><span class="line">MacGesture2-Publish.md</span><br></pre></td></tr></table></figure>
 
 <p>在文章中插入图片时链接只要写图片名称就可以，比如要插入 <code>logo.jpg</code> ，只要写成 <code>![logo](logo.jpg)</code>。</p>
@@ -234,9 +234,9 @@
 <p>接着连续三个回车键（不需要输入密码），然后就会生成两个文件 <code>id_rsa</code> 和 <code>id_rsa.pub</code> ，id_rsa 是密钥，id_rsa.pub 是公钥。这两个文件在 Linux&#x2F;Mac 系统是在 <code>~/.ssh</code> 下，Windows 系统在 <code>C:/Users/username/.ssh</code> 下。</p>
 <p>接下来要把 id_rsa.pub 的内容添加到 GitHub 上，这样你本地的 id_rsa 密钥跟 Github 上的 id_rsa.pub 公钥进行配对，授权成功才可以提交代码。</p>
 <p>打开 Github 的 Setting 页面，点击左侧的 SSH and GPG keys：</p>
-<p><img src="/.io//github-setting.png" alt="Github Setting"></p>
+<p><img src="/2017/09/19/blogging-with-hexo/github-setting.png" alt="Github Setting"></p>
 <p>然后点击页面右上角的 New SSH key 按钮：</p>
-<p><img src="/.io//new-ssh-key.png" alt="New SSH key"></p>
+<p><img src="/2017/09/19/blogging-with-hexo/new-ssh-key.png" alt="New SSH key"></p>
 <p>在 Key 那栏把 <code>id_rsa.pub</code> 文件里的内容复制粘贴进去就可以了，<code>Title</code> 不需要填写，点击 Add SSH key 按钮就 ok 了。</p>
 <p>SSH key 添加成功后，输入 <code>ssh -T git@github.com</code> 进行测试，如果出现以下提示就证明添加成功了。</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ ssh -T git@github.com</span><br><span class="line">Hi lihaitao! You&#x27;ve successfully authenticated, but GitHub does</span><br><span class="line">not provide shell access.</span><br></pre></td></tr></table></figure>
@@ -276,11 +276,11 @@
 <p>需要注意的是本地博客文件夹根目录下的 <code>.gitignore</code> 是 Hexo 自带的文件，也要提交到仓库，里面列的是要被 Git 忽略的文件，这些文件不需要纳入 Git 的管理。</p>
 <p>这样就把本地博客项目提交到你的 Github 中 <code>lihtdev.github.io</code> 仓库的 <code>develop</code> 分支上了。然后将仓库的默认分支设置为 develop，因为 develop 分支需要手动管理。</p>
 <p>在 Github 中打开 <code>lihtdev.github.io</code> 仓库的主页面，点击上面的 2 branches:</p>
-<p><img src="/.io//lihtdev.github.io.png" alt="lihtdev.github.io"></p>
+<p><img src="/lihtdev.github.io.png" alt="lihtdev.github.io"></p>
 <p>然后点击页面右上角的 Change default branch 按钮:</p>
-<p><img src="/.io//change-default-branch.png" alt="lihtdev.github.io"></p>
+<p><img src="/2017/09/19/blogging-with-hexo/change-default-branch.png" alt="lihtdev.github.io"></p>
 <p>然后按下图所示依次点击将 Default branch 设为 <code>develop</code>:</p>
-<p><img src="/.io//switch-default-branch.png" alt="lihtdev.github.io"></p>
+<p><img src="/2017/09/19/blogging-with-hexo/switch-default-branch.png" alt="lihtdev.github.io"></p>
 <p>每次更新完博客或者更改了源文件都要执行下列命令提交更新：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ git status <span class="comment"># 检查文件状态</span></span><br><span class="line">$ git add . <span class="comment"># 将当前目录的所有更新加入暂存区</span></span><br><span class="line">$ git commit -m <span class="string">&quot;提交说明&quot;</span> <span class="comment"># 提交更新</span></span><br><span class="line">$ git push origin develop <span class="comment"># 推送到远程仓库 origin 的 develop 分支</span></span><br></pre></td></tr></table></figure>
 

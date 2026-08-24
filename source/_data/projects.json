@@ -1,22 +1,27 @@
 [
-    {
-       "name":"Ager",
-       "url":"https://github.com/lihtdev/ager",
-       "desc":"年龄助手，一款根据公历（农历）生日计算周岁、虚岁、生肖和生活天数等的电脑桌面应用"
-    },
-    {
-      "name":"Resume",
-      "url":"https://lihtdev.github.io/resume/",
-      "desc":"我的个人简历，一个简单的求职简历模版"
-    },
-    {
-      "name":"Text Formatter",
-      "url":"https://lihtdev.github.io/text-formatter/",
-      "desc":"在线文本格式化工具，支持 JSON XML Java SQL URL MD5 Base64 等"
-    },
-    {
-      "name":"Web Watermark",
-      "url":"https://github.com/lihtdev/web-watermark",
-      "desc":"Web 网页水印插件，用 HTML/CSS JavaScript 实现"
-    }
+  {
+    "name": "Chrome 书签同步助手",
+    "url": "https://github.com/lihtdev/chrome-bookmarks-sync",
+    "desc": "Chrome 书签同步助手是一个 Chrome 浏览器扩展，专为国内用户设计，解决无法访问 Chrome 官方书签同步服务的问题。该扩展通过调用 Gitee OpenAPI，将书签数据以 JSON 格式存储在 Gitee 仓库中，实现多设备间的书签同步"
+  },
+  {
+    "name": "Resume",
+    "url": "https://lihtdev.github.io/resume/",
+    "desc": "我的个人简历，一个简单的求职简历模版"
+  },
+  {
+    "name": "Text Formatter",
+    "url": "https://lihtdev.github.io/text-formatter/",
+    "desc": "在线文本格式化工具，支持 JSON XML Java SQL URL MD5 Base64 等"
+  },
+  {
+    "name": "Images to PDF",
+    "url": "https://github.com/lihtdev/images-to-pdf",
+    "desc": "一个将图片转换为 PDF 文件的桌面应用程序"
+  },
+  {
+    "name": "Ager",
+    "url": "https://github.com/lihtdev/ager",
+    "desc": "年龄助手，一个根据公历（农历）生日计算周岁、虚岁、生肖和生活天数等的电脑桌面应用"
+  }
 ]
